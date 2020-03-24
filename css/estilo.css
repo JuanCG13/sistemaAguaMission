@@ -1,0 +1,151 @@
+body{
+    background-color: white;
+    margin: 0 auto;
+}
+
+
+
+.container{
+    text-align: center;
+    margin: 0 auto;
+    background-color: white;
+    height: 280px;
+    width: 400px;
+    box-shadow: 3px 1px 10px #000000;
+}
+.datos{
+    text-align: left;
+    margin-left: 20px;
+}
+
+#titulo{
+ background-color: teal;
+}
+
+h1{
+    background-color: #080C27; 
+    padding-top: 21px;
+    padding-bottom: 21px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+
+}
+
+.atras a{
+     text-decoration: none;
+     color: black;
+}
+
+#cantidad{
+    padding-right: 0px;
+    width: 186px;
+    padding-left: 0px;
+}
+
+#precio{
+    padding-right: 0px;
+    width: 143px;
+}
+
+#productos{
+    padding-right: 010px;
+    padding-left: 12px;
+}
+
+.tabla{
+    margin: 0 auto;
+    width: 650px;
+    background-color: white;
+    margin-top: 15px;
+    padding: 10px;
+    
+}
+
+td{
+    /* border: black 1px;
+    border-style: solid;
+    border-color: black; */
+    /* box-shadow: 2px 2px 5px black; */
+    padding: 5px;
+    border: solid black 1px;
+}
+
+#botones{
+    border: none;
+    padding: 5px;
+}
+
+.ordenar
+{
+    display: flex;
+}
+
+.lista{
+    display: flex;
+    padding-left: 30px;
+    margin: 0px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #080C27;
+    margin-bottom: 10px;
+    
+}
+
+.elementos{
+    margin-right: 20px;
+    list-style-type: none;
+}
+
+.elementos a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    box-shadow: 3px 1px 10px black;
+    margin-bottom: 40px;
+    
+}
+
+table{
+    border-spacing: 0px;
+    border-collapse: collapse;
+     
+
+}
+
+thead{
+    box-shadow: 3px 1px 10px #000000;
+}
+
+#borrar{
+    background-color: #FF0505;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-right: 10px;
+    border: none;
+    font-weight: 900;
+    box-shadow: 1px 1px 2px black;
+    
+}
+
+#editar{
+    background-color: #14D101;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: none;
+    font-weight: 900;
+    box-shadow: 1px 1px 2px black;
+}
+
+input[type=number] { 
+    -moz-appearance:textfield; 
+}
