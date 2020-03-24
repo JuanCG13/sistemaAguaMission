@@ -152,12 +152,12 @@ while($fila = mysqli_fetch_array($datos))
             <br>
             <div class="datos">
                 <label for=""> Precio Producto </label>
-                <input type="number" name="precio" id="precio" required placeholder="',$fila['precio'],'">
+                <input type="number" name="precio" id="precio" placeholder="',$fila['precio'],'">
             </div>
             <br>
             <div class="datos">
                 <label for=""> Cantidad </label>
-                <input type="number" name="cantidad" id="cantidad" required  placeholder="',$fila['cantidad'],'">
+                <input type="number" name="cantidad" id="cantidad" placeholder="',$fila['cantidad'],'">
             </div>
             <br>
             <div class="datos">
