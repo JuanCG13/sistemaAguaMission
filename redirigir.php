@@ -47,10 +47,33 @@ if(isset($_POST['camion']) && !empty($_POST['camion']))
         $cantidad = mysqli_real_escape_string($con,$_POST['cantidad']);
     
     
-        $consulta = "UPDATE ventas SET producto='$producto', precio='$precio', cantidad='$cantidad' WHERE id = '$_POST[ideditar]' ";
-        //aca se guarda la conexion a la base de datos y la consulta
+
+
+        if(empty($_POST['precio']) && empty($_POST['cantidad']))
+        {
+
+            $consulta = "UPDATE ventas SET producto='$producto', precio='$precio', cantidad='$cantidad' WHERE id = '$_POST[ideditar]' ";
+            //aca se guarda la conexion a la base de datos y la consulta
+        
+            mysqli_query($con,$consulta);
+        }
+
+        if(!empty($_POST['precio']))
+        {
+            $consulta = "UPDATE ventas SET producto='$producto', precio='$precio'  WHERE id = '$_POST[ideditar]' ";
+            //aca se guarda la conexion a la base de datos y la consulta
     
-        mysqli_query($con,$consulta);
+            mysqli_query($con,$consulta);
+        }
+
+        if(!empty($_POST['cantidad']))
+        {
+            $consulta = "UPDATE ventas SET producto='$producto', cantidad='$cantidad'  WHERE id = '$_POST[ideditar]' ";
+            //aca se guarda la conexion a la base de datos y la consulta
+    
+            mysqli_query($con,$consulta);
+        }
+
 
         mysqli_close($con);
     }
