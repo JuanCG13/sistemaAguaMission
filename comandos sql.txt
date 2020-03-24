@@ -1,0 +1,7 @@
+
+***reiniciar contador***
+	
+ALTER TABLE tblname AUTO_INCREMENT = 0;
+
+*********************************************
+
