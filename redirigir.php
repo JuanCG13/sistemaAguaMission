@@ -15,7 +15,7 @@ if(isset($_POST['camion']) && !empty($_POST['camion']))
         include_once('camion02.php');
     }
     if ($camion === 'camion03')
-    {
+    { 
         include_once('camion03.php');
     }
     if ($camion === 'camion04')
@@ -49,7 +49,20 @@ if(isset($_POST['camion']) && !empty($_POST['camion']))
     
 
 
+
+
         if(empty($_POST['precio']) && empty($_POST['cantidad']))
+        {
+
+            $consulta = "UPDATE ventas SET producto='$producto' WHERE id = '$_POST[ideditar]' ";
+            //aca se guarda la conexion a la base de datos y la consulta
+        
+            mysqli_query($con,$consulta);
+        }
+
+
+
+        if(!empty($_POST['precio']) && !empty($_POST['cantidad']))
         {
 
             $consulta = "UPDATE ventas SET producto='$producto', precio='$precio', cantidad='$cantidad' WHERE id = '$_POST[ideditar]' ";
